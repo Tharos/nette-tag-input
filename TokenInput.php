@@ -84,7 +84,6 @@ class TokenInput extends BaseControl {
         $template->registerHelperLoader('Nette\Templating\Helpers::loader');
         $template->registerFilter(new Engine);
 
-        $template->_control = $this->parent->presenter;
         $template->htmlId = $this->getHtmlId();
         $template->link = $this->link;
         $template->settings = Json::encode($this->settings);
