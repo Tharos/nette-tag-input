@@ -1,23 +1,30 @@
 {
-    "name": "achse/nette-tokeninput",
-    "description": "Form compoennt for token input label.",
-    "type": "library",
-    "license": ["New BSD"],
-    "authors": [
-        {
-            "name": "Jiří Müller",
-            "homepage": "http://aridea.org",
-            "email": "jiri.mull@gmail.com"
-        },
-        {
-            "name": "Petr Hejna",
-            "homepage": "http://petrhejna.org",
-            "email": "hejna.peter@gmail.com"
-        }
-
-    ],
-    "require": {
-        "nette/nette": ">= 2.1.0",
-        "php": ">= 5.3.7"
-    }
+	"name": "achse/nette-token-input",
+	"description": "Form component for token input label.",
+	"type": "library",
+	"license": [
+		"MIT"
+	],
+	"authors": [
+		{
+			"name": "Jiří Müller",
+			"homepage": "http://aridea.org",
+			"email": "jiri.mull@gmail.com"
+		},
+		{
+			"name": "Petr Hejna",
+			"homepage": "http://petrhejna.org",
+			"email": "hejna.peter@gmail.com"
+		}
+	],
+	"require": {
+		"nette/forms": "~2.3.0",
+		"nette/deprecated": "2.3.0",
+		"php": ">=5.6"
+	},
+	"autoload": {
+		"psr-4": {
+			"Achse\\TokenInput\\": "src/"
+		}
+	}
 }
