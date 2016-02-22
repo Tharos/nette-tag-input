@@ -1,6 +1,6 @@
 This is Nette adaptation for: https://github.com/bootstrap-tagsinput/bootstrap-tagsinput
 
-# Installaction
+# Installation
 
 ## Composer:
 > **Disclaimer:** One day I maybe add package to https://packagist.org. 
