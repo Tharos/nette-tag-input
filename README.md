@@ -79,7 +79,7 @@ $form->addTagInput(
 );
 ```
 
-On the link given by last argument should be something in format like this:
+On that URL given by last argument should be something in format like this:
 ```php
 public function renderUsers()
 {
