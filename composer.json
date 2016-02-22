@@ -1,16 +1,11 @@
 {
-	"name": "achse/nette-token-input",
+	"name": "achse/nette-tag-input",
 	"description": "Form component for token input label.",
 	"type": "library",
 	"license": [
 		"MIT"
 	],
 	"authors": [
-		{
-			"name": "Jiří Müller",
-			"homepage": "http://aridea.org",
-			"email": "jiri.mull@gmail.com"
-		},
 		{
 			"name": "Petr Hejna",
 			"homepage": "http://petrhejna.org",
@@ -19,7 +14,7 @@
 	],
 	"require": {
 		"nette/forms": "~2.3.0",
-		"nette/deprecated": "2.3.0",
+		"nette/utils": "~2.3.0",
 		"php": ">=5.6"
 	},
 	"autoload": {
