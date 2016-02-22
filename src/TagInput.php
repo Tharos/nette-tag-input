@@ -1,13 +1,13 @@
 <?php
 
-namespace Achse\TokenInput;
+namespace Achse\TagInput;
 
 use Nette\Forms\Controls\TextInput;
 use Nette\Utils\Json;
 
 
 
-class TokenInput extends TextInput
+class TagInput extends TextInput
 {
 
 	/**
@@ -35,7 +35,7 @@ class TokenInput extends TextInput
 	public function getControl()
 	{
 		$input = parent::getControl();
-		$input->addAttributes(['data-tokenInput' => Json::encode($this->dataSourceDescriptor)]);
+		$input->addAttributes(['data-tagInput' => Json::encode($this->dataSourceDescriptor)]);
 
 		return $input;
 	}

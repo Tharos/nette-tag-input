@@ -1,15 +1,3 @@
 composer.lock
-
+output
 vendor/*
-!vendor/others
-
-.DS_Store
-!.gitignore
-!.htaccess
-
-!web.config
-
-.buildpath
-.project
-.idea
-/nbproject

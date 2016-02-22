@@ -2,9 +2,9 @@ $(document).ready(function () {
 
 	localStorage.clear();
 
-	$('input[data-tokenInput]').each(function () {
+	$('input[data-tagInput]').each(function () {
 
-		var settings = jQuery.parseJSON($(this).attr('data-tokenInput'));
+		var settings = jQuery.parseJSON($(this).attr('data-tagInput'));
 
 		var data = new Bloodhound({
 			datumTokenizer: Bloodhound.tokenizers.obj.whitespace(settings.labelPropertyName),

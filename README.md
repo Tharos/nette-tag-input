@@ -1,3 +1,7 @@
+![](https://travis-ci.org/Achse/nette-tag-input.svg?branch=master)
+![](https://scrutinizer-ci.com/g/Achse/nette-tag-input/badges/quality-score.png?b=master)
+![](https://scrutinizer-ci.com/g/Achse/nette-tag-input/badges/coverage.png?b=master)
+
 This is Nette adaptation for: https://github.com/bootstrap-tagsinput/bootstrap-tagsinput
 
 ![](https://raw.githubusercontent.com/Achse/nette-tag-input/master/examples/example.png)
@@ -43,7 +47,7 @@ webloader:
 				- %wwwDir%/../node_modules/bootstrap3/dist/js/bootstrap.min.js
 				- %wwwDir%/../node_modules/typeahead.js/dist/typeahead.bundle.js
 				- %wwwDir%/../node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.js
-				- %wwwDir%/../vendor/achse/nette-tag-input/assets/tokenInput.js
+				- %wwwDir%/../vendor/achse/nette-tag-input/assets/tagInput.js
 ````
 
 ## Nette Form
@@ -54,11 +58,11 @@ You just add this code to your `BaseForm` or trait or whattever adds `addXyzInpu
 	 * @param string $name
 	 * @param string $label
 	 * @param DataSourceDescriptor $dataSourceDescriptor
-	 * @return TokenInput
+	 * @return TagInput
 	 */
-	public function addTokenInput($name, $label, DataSourceDescriptor $dataSourceDescriptor)
+	public function addTagInput($name, $label, DataSourceDescriptor $dataSourceDescriptor)
 	{
-		$input = new TokenInput($dataSourceDescriptor, $label);
+		$input = new TagInput($dataSourceDescriptor, $label);
 
 		return $this[$name] = $input;
 	}
@@ -68,7 +72,7 @@ And usage:
 ```php
 $form = new BaseForm();
 
-$form->addTokenInput(
+$form->addTagInput(
 	'to',
 	'Send to',
 	new DataSourceDescriptor($this->linkGenerator->link('SomeModule:SomePresenter:users'))
