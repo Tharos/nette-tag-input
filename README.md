@@ -1,5 +1,7 @@
 This is Nette adaptation for: https://github.com/bootstrap-tagsinput/bootstrap-tagsinput
 
+![](https://raw.githubusercontent.com/Achse/nette-tag-input/master/examples/example.png)
+
 # Installation
 
 ## Composer:
