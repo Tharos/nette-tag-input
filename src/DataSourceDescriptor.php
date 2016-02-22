@@ -43,7 +43,7 @@ class DataSourceDescriptor extends Object implements JsonSerializable
 	/**
 	 * @inheritdoc
 	 */
-	function jsonSerialize()
+	public function jsonSerialize()
 	{
 		return (object) [
 			'url' => $this->url,
