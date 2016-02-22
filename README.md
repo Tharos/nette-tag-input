@@ -75,7 +75,7 @@ $form->addTokenInput(
 
 On the link given by last argument should be something in format like this:
 ```php
-public function renderCouriers()
+public function renderUsers()
 {
 	$array = [
 		(object) [
