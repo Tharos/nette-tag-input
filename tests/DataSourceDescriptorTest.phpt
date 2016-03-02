@@ -22,9 +22,10 @@ class DataSourceDescriptorTest extends TestCase
 		$descriptor = new DataSourceDescriptor('https://lister.red-dwarf.jup');
 		$descriptor->setLabelPropertyName('label2');
 		$descriptor->setValuePropertyName('value2');
+		$descriptor->setMaxTags(1);
 
 		Assert::equal(
-			'{"url":"https://lister.red-dwarf.jup","valuePropertyName":"value2","labelPropertyName":"label2"}',
+			'{"url":"https://lister.red-dwarf.jup","valuePropertyName":"value2","labelPropertyName":"label2","maxTags":1}',
 			Json::encode($descriptor)
 		);
 	}

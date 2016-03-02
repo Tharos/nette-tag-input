@@ -29,7 +29,7 @@ class TagInputTest extends TestCase
 		$form['tagInput'] = $tagInput = new TagInput($descriptor, 'Sent to');
 
 		$expected = '<input type="text" name="tagInput" id="frm-tagInput" data-tagInput=\''
-			. '{"url":"https://lister.red-dwarf.jup","valuePropertyName":"value2","labelPropertyName":"label2"}'
+			. '{"url":"https://lister.red-dwarf.jup","valuePropertyName":"value2","labelPropertyName":"label2","maxTags":null}'
 			. '\'>';
 
 		Assert::equal($expected, (string) $tagInput->getControl());

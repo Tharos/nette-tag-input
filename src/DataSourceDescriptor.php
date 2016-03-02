@@ -28,6 +28,11 @@ class DataSourceDescriptor extends Object implements JsonSerializable
 	 */
 	private $labelPropertyName = self::DEFAULT_LABEL_PROPERTY;
 
+	/**
+	 * @var int|NULL
+	 */
+	private $maxTags = NULL;
+
 
 
 	/**
@@ -49,6 +54,7 @@ class DataSourceDescriptor extends Object implements JsonSerializable
 			'url' => $this->url,
 			'valuePropertyName' => $this->valuePropertyName,
 			'labelPropertyName' => $this->labelPropertyName,
+			'maxTags' => $this->maxTags,
 		];
 	}
 
@@ -70,6 +76,16 @@ class DataSourceDescriptor extends Object implements JsonSerializable
 	public function setValuePropertyName($valuePropertyName)
 	{
 		$this->valuePropertyName = $valuePropertyName;
+	}
+
+
+
+	/**
+	 * @param int|NULL $maxTags
+	 */
+	public function setMaxTags($maxTags)
+	{
+		$this->maxTags = $maxTags;
 	}
 
 }

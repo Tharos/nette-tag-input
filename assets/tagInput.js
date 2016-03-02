@@ -19,6 +19,7 @@ $(document).ready(function () {
 		$(this).tagsinput({
 			itemValue: settings.valuePropertyName,
 			itemText: settings.labelPropertyName,
+			maxTags: settings.maxTags,
 			typeaheadjs: {
 				name: 'data',
 				displayKey: settings.labelPropertyName,
