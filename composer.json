@@ -2,8 +2,10 @@
 	"name": "achse/nette-tag-input",
 	"description": "Form component for tag-input label.",
 	"type": "library",
-	"license": [
-		"MIT"
+	"license": "MIT",
+	"keywords": [
+		"forms",
+		"bootstrap"
 	],
 	"authors": [
 		{

@@ -1,3 +1,5 @@
+[![Downloads this Month](https://img.shields.io/packagist/dm/achse/nette-tag-input.svg)](https://packagist.org/packages/achse/nette-tag-input)
+[![Latest Stable Version](https://poser.pugx.org/achse/nette-tag-input/v/stable)](https://github.com/achse/nette-tag-input/releases)
 ![](https://travis-ci.org/Achse/nette-tag-input.svg?branch=master)
 ![](https://scrutinizer-ci.com/g/Achse/nette-tag-input/badges/quality-score.png?b=master)
 ![](https://scrutinizer-ci.com/g/Achse/nette-tag-input/badges/coverage.png?b=master)
@@ -9,15 +11,8 @@ This is Nette adaptation for: https://github.com/bootstrap-tagsinput/bootstrap-t
 # Installation
 
 ## Composer:
-> **Disclaimer:** One day I maybe add package to https://packagist.org. 
-
 ```
-"require": {
-    "achse/nette-tag-input": "@dev"
-},
-"repositories": [
-    { "type": "git", "url": "https://github.com/Achse/nette-tag-input.git" }
-]
+composer require achse/nette-tag-input
 ```
 
 And: `composer update achse/nette-tag-input`
@@ -93,7 +88,7 @@ public function renderUsers()
 			DataSourceDescriptor::DEFAULT_LABEL_PROPERTY => 'Boris Yeltsin',
 		],
 	];
-	
+
 	$this->sendResponse(new JsonResponse($array));
 }
 ```
